@@ -1,2 +1,1 @@
-# ikt-1
-kapcsolat próba 
+kapcsolat próba
