@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+/* header */
+.header {
+  background-color: #c6c6c6;
+  padding: 30px;
+  list-style-type: none;
+  display: flex-end;
+  
+
+  
+}
+/*
+li {
+  float: right;
+  padding-right: 10px ;
+  padding-left: 10px ;
+  padding-top: 10px ;
+  border: 1px solid black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  
+  overflow: hidden;
+  
+}
+
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+  color: white;
+}
+*/
+
+/* header és footer közt*/
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.column {
+  padding: 10px;
+  height: 600px;
+  text-align: center; 
+}
+
+/* nav és asside*/
+.column.oldal {
+   -webkit-flex: 1;
+   flex: 1;
+   
+}
+
+/* article */
+.column.middle {
+  -webkit-flex: 2;
+  flex: 4;
+  background-color:#92a6d8;
+  
+}
+
+/* footer */
+.footer {
+  background-color: #c6c6c6;
+  padding: 10px;
+  display: flex;
+  text-align: center;
+}
+
+
+/* Responsive téma*/
+@media (max-width: 500px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+ul.topnav li.right, 
+ul.topnav li 
+    {float: none;}
+
+}
+    </style>
+</head>
+<body>
+    
+
+<div class="header">
+    
+<!--  <ul><li><a>miau</a></li>
+  <li><a>cicákok</a></li>
+  <li><a>meow</a></li>
+  <li><a>szív</a></li>
+</ul> -->
+</div>
+
+<div class="row">
+  <div class="column oldal" style="background-color:#898989;">Nav</div>
+  <div class="column middle">Article</div>
+  <div class="column oldal" style="background-color:#4473c5;">Asside</div>
+</div>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+</body>
+</html>
